@@ -48,3 +48,4 @@ Next option is “Elastic IP allocation ID” , click on button that says “All
 You can add tag such as “environment” for Key and “dev” for Value”
 Click on orange button “Create NAT gateway”
 
+https://devopsalphagroup.slack.com/files/U06D7UCF53P/F06PKEG8XB7/screenshot_2024-03-13_205336.png
