@@ -1,0 +1,50 @@
+                                     VPC
+Open AWS website
+Search “VPC” in aws search label (Alt+S)
+Click on VPCs from “Resources by Region”
+Click on orange button that says “Create VPC”
+You can choose earthier “VPC only” or “VPC and more” 
+On the “Name tag - optional” you write “README.MD”
+We don’t touch “IPv4 CIDR block” and “IPv6 CIDR block”
+On “IPv4 CIDR” you will write 10.0.0.0/8 or it depends on your preference
+You don’t touch the “Trenacy” option
+The last option is “Tags” you add tag such as “environment” for Key and “dev” for Value”
+Click on orange “Create VPC” button
+
+                                               SUBNETS
+On the left side, you will see “Subnets”, click on it
+And click on orange label that says “Create subnet”
+In the first option pick VPC where you want to create subnet
+“Subnet settings” will pop up and you need to name your subnet. We will go with “Readme.mdA” depending on what you have in the availability zone. (There might be “A” “B” “C” availability zones)
+“You won’t touch IPv4 VPC CIDR block” option
+In the “IPv4 subnet CIDR block” you can write “10.0.0.0/16”
+You can add tag such as “environment” for Key and “dev” for Value”
+And press on orange button “Create subnet”
+
+
+                                            ROUTE TABLE
+Now we will create route tables. You need to pick “Route Tables” under “Subnets” on the left side.
+Click on “Create route table” button
+Name your route table, we will go with “Readme.mdRT”
+And in second option choose the VPC for route table
+You can add tag such as “environment” for Key and “dev” for Value”
+Click on button “Create route table”
+
+                                        INTERNET GATEWAY
+On the left side under “Virtual private cloud” choose “Internet gateways”
+Click on “Create internet gateway” button
+You need to name the IG, we will go with “Readme.mdIG”
+Tags are optional, you can either add tag such as “environment” for Key and “dev” for Value” or just don’t touch it
+Click on “Create internet gateway”
+And we just connected VPC to internet
+
+                                             NAT GATEWAYS
+And again go to the left side and you will see “NAT gateways” under “Virtual private cloud”
+Click on orange button “Create NAT gateway”
+Name your NAT gateway, we will go with ”Readme.mdNATgw”
+Select a subnet in which you want to create NAT GW. There are private subnets and public subnets. We will go with public one
+In the “Connectivity type” you either have to choose “Public” or “Private”, it depends on your subnet type. We will choose “Public” because our subnet is public
+Next option is “Elastic IP allocation ID” , click on button that says “Allocate Elastic IP”
+You can add tag such as “environment” for Key and “dev” for Value”
+Click on orange button “Create NAT gateway”
+
